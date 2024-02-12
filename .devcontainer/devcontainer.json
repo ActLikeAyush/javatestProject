@@ -1,0 +1,13 @@
+{
+    "name": "Java Development",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "vscjava.vscode-java-pack",
+      "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [8080, 3306],
+    "postCreateCommand": "bash .devcontainer/init.sh"
+  }
